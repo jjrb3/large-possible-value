@@ -25,6 +25,12 @@ class LargePossibleValueUseCaseTest extends TestCase
         $this->useCase = new LargePossibleValueUseCase();
     }
 
+    protected function tearDown(): void
+    {
+        parent::tearDown();
+        unset($this->useCase);
+    }
+
     /**
      * @throws ValueCalculationException
      */
