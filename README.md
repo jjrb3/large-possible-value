@@ -68,3 +68,30 @@ Se instaló `php-cs-fixer` para arreglar los errores de formato que tenga el pro
 encontrado y arreglado los siguientes:
 
 ![functions](storage/documentation/pictures/format-errors.png)
+
+### Comando ejecutados sin Alias.
+
+Correr la pruebas en general.
+```text
+vendor/bin/phpunit tests/Unit/app/UseCases/LargePossibleValueUseCaseTest.php
+```
+
+Correr la pruebas detallandolas.
+```text
+vendor/bin/phpunit tests/Unit/app/UseCases/LargePossibleValueUseCaseTest.php --testdox
+```
+
+Generar covertura por HTML.
+```text
+XDEBUG_MODE=coverage vendor/bin/phpunit tests/Unit/app/UseCases/LargePossibleValueUseCaseTest.php --coverage-html=coverage
+```
+
+Revisar errores de linter.
+```text
+vendor/bin/phpstan analyse app --no-progress --memory-limit 3G > test-reports/static-errors.txt 2> test-reports/static-fatal.txt
+```
+
+Corregir errores de formato.
+```text
+vendor/bin/php-cs-fixer fix
+```
