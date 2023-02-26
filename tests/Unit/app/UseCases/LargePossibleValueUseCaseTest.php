@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\app\UseCases;
 
+use App\Exceptions\ValueCalculationException;
 use App\UseCases\LargePossibleValueUseCase;
 use JetBrains\PhpStorm\ArrayShape;
 use JetBrains\PhpStorm\NoReturn;
@@ -20,19 +21,37 @@ class LargePossibleValueUseCaseTest extends TestCase
         $this->useCase = new LargePossibleValueUseCase();
     }
 
+    /**
+     * @throws ValueCalculationException
+     */
     #[NoReturn]
     public function testExistErrorByDiffArgumentsType(): void
     {
         $this->expectException(Throwable::class);
 
-        $result = $this->useCase
+        $this->useCase
             ->find(
                 numberX: self::STRING_ARG_FOR_NUMBER_X,
                 numberY: 1,
                 numberN: 2
             );
+    }
 
-        $this->assertNotEmpty($result);
+    /**
+     * @throws ValueCalculationException
+     */
+    #[NoReturn]
+    public function testWhenNotExistPossibility(): void
+    {
+        $this->expectException(ValueCalculationException::class);
+        $this->expectExceptionMessage('No values were found');
+
+        $this->useCase
+            ->find(
+                numberX: 12,
+                numberY: 10_000,
+                numberN: -1
+            );
     }
 
     #[ArrayShape([
