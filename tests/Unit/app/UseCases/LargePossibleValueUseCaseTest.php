@@ -4,8 +4,7 @@ namespace Tests\Unit\app\UseCases;
 
 use App\Exceptions\ValueCalculationException;
 use App\UseCases\LargePossibleValueUseCase;
-use JetBrains\PhpStorm\ArrayShape;
-use JetBrains\PhpStorm\NoReturn;
+use JetBrains\PhpStorm\{ArrayShape, NoReturn};
 use PHPUnit\Framework\TestCase;
 use Throwable;
 
@@ -101,45 +100,45 @@ class LargePossibleValueUseCaseTest extends TestCase
     {
         return [
             'Scenario 1' => [
-                'numberX' => 7,
-                'numberY' => 5,
-                'numberN' => 12_345,
+                'numberX'       => 7,
+                'numberY'       => 5,
+                'numberN'       => 12_345,
                 'successResult' => 12_339
             ],
             'Scenario 2' => [
-                'numberX' => 5,
-                'numberY' => 0,
-                'numberN' => 4,
+                'numberX'       => 5,
+                'numberY'       => 0,
+                'numberN'       => 4,
                 'successResult' => 0
             ],
             'Scenario 3' => [
-                'numberX' => 10,
-                'numberY' => 5,
-                'numberN' => 15,
+                'numberX'       => 10,
+                'numberY'       => 5,
+                'numberN'       => 15,
                 'successResult' => 15
             ],
             'Scenario 4' => [
-                'numberX' => 17,
-                'numberY' => 8,
-                'numberN' => 54_321,
+                'numberX'       => 17,
+                'numberY'       => 8,
+                'numberN'       => 54_321,
                 'successResult' => 54_306
             ],
             'Scenario 5' => [
-                'numberX' => 499_999_993,
-                'numberY' => 9,
-                'numberN' => 1_000_000_000,
+                'numberX'       => 499_999_993,
+                'numberY'       => 9,
+                'numberN'       => 1_000_000_000,
                 'successResult' => 999_999_995
             ],
             'Scenario 6' => [
-                'numberX' => 10,
-                'numberY' => 5,
-                'numberN' => 187,
+                'numberX'       => 10,
+                'numberY'       => 5,
+                'numberN'       => 187,
                 'successResult' => 185
             ],
             'Scenario 7' => [
-                'numberX' => 10,
-                'numberY' => 5,
-                'numberN' => 187,
+                'numberX'       => 10,
+                'numberY'       => 5,
+                'numberN'       => 187,
                 'successResult' => 185
             ]
         ];

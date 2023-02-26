@@ -34,6 +34,8 @@ app/Exceptions/ValueCalculationException.php
 tests/Unit/app/UseCases/LargePossibleValueUseCaseTest.php
 ```
 
+---
+
 ### Test unitarios y cobertura.
 
 En el archivo de pruebas podemos ver los siguientes test:
@@ -52,3 +54,17 @@ Como podemos ver en la imagen:
 Se hizo la revisión de la cobertura para el caso de uso creado obteniendo el 100%.
 
 ![functions](storage/documentation/pictures/coverage.png)
+
+---
+
+### Revisión de estandares.
+
+Se instalo `phpstan` para revisar los errores en linter que tiene el proyecto actual y arreglarlos. Todos los errores
+fueron solucionados.
+
+![functions](storage/documentation/pictures/linter-errors.png)
+
+Se instaló `php-cs-fixer` para arreglar los errores de formato que tenga el proyecto y los archivos creados. Fueron 
+encontrado y arreglado los siguientes:
+
+![functions](storage/documentation/pictures/format-errors.png)
