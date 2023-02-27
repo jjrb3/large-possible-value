@@ -136,10 +136,10 @@ class LargePossibleValueUseCaseTest extends TestCase
                 'successResult' => 185
             ],
             'Scenario 7' => [
-                'numberX'       => 10,
-                'numberY'       => 5,
-                'numberN'       => 187,
-                'successResult' => 185
+                'numberX'       => 2,
+                'numberY'       => 0,
+                'numberN'       => 999_999_999,
+                'successResult' => 999_999_998
             ]
         ];
     }
