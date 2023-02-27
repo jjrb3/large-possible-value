@@ -50,9 +50,9 @@ los siguientes test:
 La ultima prueba `testSuccessScenarios` son los escenarios `input` con su resultado `output`.
 
 
-| Desafío de la pagina Web                                         | Escenarios generados para el desafío                       | Detalle del escenario creado                                      |
-|------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
-| ![Input-Output](storage/documentation/pictures/input-output.png) | ![functions](storage/documentation/pictures/test-unit.png) | ![functions](storage/documentation/pictures/scenarios-detail.png) |
+| Desafío de la pagina Web                                         | Escenarios generados para el desafío                       | Detalle del escenario creado                                     |
+|------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------|
+| ![Input-Output](storage/documentation/pictures/input-output.png) | ![functions](storage/documentation/pictures/test-unit.png) | ![functions](storage/documentation/pictures/scenario-detail.png) |
 
 
 Como podemos ver en la imagen:
