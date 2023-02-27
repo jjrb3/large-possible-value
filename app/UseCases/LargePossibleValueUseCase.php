@@ -20,7 +20,7 @@ final class LargePossibleValueUseCase
     public function find(int $numberX, int $numberY, int $numberN): int
     {
         for ($numberK = $numberN; $numberK >= 0; $numberK--) {
-            if ($numberK % $numberX == $numberY) {
+            if ($numberK % $numberX === $numberY) {
                 return $numberK;
             }
         }
