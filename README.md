@@ -82,6 +82,8 @@ __NOTA.__ Los estandares usados fueron [PSR-12](https://www.php-fig.org/psr/psr-
 [Clean Code](https://github.com/piotrplenik/clean-code-php) y en lo posible 
 [Arquitectura Limpía](http://prof.mau.ac.ir/images/Uploaded_files/Clean%20Architecture_%20A%20Craftsman’s%20Guide%20to%20Software%20Structure%20and%20Design-Pearson%20Education%20(2018)%5B7615523%5D.PDF).
 
+---
+
 ### Comando ejecutados sin Alias.
 
 Correr la pruebas en general.
